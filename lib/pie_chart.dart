@@ -62,8 +62,8 @@ class _PieChartState extends State<PieChart> {
                         explode: true,
                         strokeWidth: 3,
                         strokeColor: Colors.yellow,
-                        selectionBehavior: SelectionBehavior(
-                            selectedBorderColor: Colors.purple),
+                        // selectionBehavior: SelectionBehavior(
+                        //     selectedBorderColor: Colors.purple),
                         onPointTap: (pointInteractionDetails) {
                           print(
                               chartData[pointInteractionDetails.pointIndex!].x);
@@ -72,11 +72,11 @@ class _PieChartState extends State<PieChart> {
                             selectedIndex = pointInteractionDetails.pointIndex;
                           });
                         },
-                        emptyPointSettings: EmptyPointSettings(
-                            mode: EmptyPointMode.drop,
-                            color: Colors.red,
-                            borderColor: Colors.black,
-                            borderWidth: 9),
+                        // emptyPointSettings: EmptyPointSettings(
+                        //     mode: EmptyPointMode.drop,
+                        //     color: Colors.red,
+                        //     borderColor: Colors.black,
+                        //     borderWidth: 9),
                         explodeOffset: "10",
                         radius: '100',
                         pointRadiusMapper: (datum, index) {
